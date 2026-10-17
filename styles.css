@@ -65,3 +65,24 @@ footer{font-family:var(--mono);font-size:.82rem;color:var(--mute);margin-top:60p
 .ig-result .tx{font-size:.72rem;color:#ddd;min-width:0}
 .ig-result .tx b{display:block;font-size:.76rem;margin-bottom:2px}
 .ig-result .tx span{color:#8e8e8e}
+
+/* higher-fidelity instagram chrome */
+.phone{width:240px}
+.ig-status{display:flex;justify-content:space-between;align-items:center;padding:7px 18px 2px;font-size:.68rem;font-weight:600}
+.ig-status .icons{display:flex;gap:4px;align-items:center}
+.ig-topbar{display:flex;align-items:center;justify-content:space-between;padding:10px 14px 6px;font-weight:700;font-size:1rem}
+.ig-topbar svg{opacity:.9}
+.ig-tabs{display:flex;border-bottom:1px solid #262626;margin:2px 0 6px}
+.ig-tabs span{flex:1;text-align:center;font-size:.68rem;padding:8px 0;color:#8e8e8e;font-weight:600}
+.ig-tabs span.on{color:#fff;border-bottom:2px solid #fff;margin-bottom:-1px}
+.ig-grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;padding:0 2px}
+.ig-tile{aspect-ratio:1;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.ig-tile svg{width:52%;height:52%;opacity:.92}
+.ig-navbar{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-around;align-items:center;padding:10px 0 12px;border-top:1px solid #1a1a1a;background:#000}
+.ig-navbar svg{opacity:.95}
+.ig-empty{display:flex;flex-direction:column;align-items:center;text-align:center;padding:50px 24px;color:#8e8e8e;font-size:.76rem}
+.ig-empty svg{margin-bottom:14px;opacity:.6}
+.ig-empty b{color:#fff;font-size:.86rem;display:block;margin-bottom:6px}
+.ig-empty .sugg{margin-top:16px;display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
+.ig-empty .sugg span{background:#262626;border-radius:99px;padding:6px 12px;font-size:.68rem;color:#ddd}
+.badge{position:absolute;bottom:4px;right:4px;background:rgba(0,0,0,.55);border-radius:4px;padding:1px 5px;font-size:.55rem;color:#fff;display:flex;align-items:center;gap:2px}
