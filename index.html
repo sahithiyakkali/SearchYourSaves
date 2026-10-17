@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Searchable Saved — an Instagram feature concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head><body><div class="wrap">
+
+<nav class="top"><a href="https://sahithiyakkali.github.io/myportfolio/" target="_blank">← back to portfolio</a></nav>
+
+<p class="role">product concept · Instagram</p>
+<h1>Searchable Saved</h1>
+<p class="lede">You save hundreds of posts. You can almost never find the one you want. Here's a search layer for Instagram's Saved tab that fixes that — without adding a single button to tap.</p>
+
+<p class="loglabel">THE PROBLEM</p>
+<p>Instagram users save content constantly, but Saved becomes a one-way trip. Collections help with broad sorting, but they don't solve the real failure mode: you remember <em>what</em> you saved, not <em>where</em>. You can't search by topic, caption, hashtag, or creator — only by scrolling and hoping you recognize the thumbnail.</p>
+<p>So the behavior Instagram wants — save more, come back to it — quietly breaks down. The current experience rewards saving and punishes retrieving.</p>
+
+<p class="loglabel">WHY IT MATTERS</p>
+<p>A save is a stronger signal than a like — it's "I want this later." When later comes and the user can't find it, that signal goes to waste: time lost scrolling, cluttered collections, duplicate saves of the same post, and the organizing workflow quietly moving to Pinterest, TikTok, or Notes instead. Fixing retrieval turns Saved from a junk drawer into something people actually return to Instagram for.</p>
+
+<p class="loglabel">WHO THIS IS FOR</p>
+<div class="entry"><div class="meta">PRIMARY</div><h3>High-volume savers</h3><p>Beauty and fashion, recipes, travel planning, home décor, fitness, students, product research — anyone whose Saved tab has become too big to scroll. They return to Instagram with a specific purpose, which makes them a strong retention and advertiser-relevant segment: beauty, fashion, food, travel, shopping.</p></div>
+<div class="entry"><div class="meta">SECONDARY</div><h3>Occasional savers</h3><p>Don't save hundreds of posts, but still hit the exact same wall once in a while — "I saved a résumé template three months ago and have no idea where it went."</p></div>
+
+<p class="loglabel">PAIN POINTS</p>
+<table class="pains">
+<tr><th>What users feel</th><th>What actually happens</th></tr>
+<tr><td>"I remember what I saved, but not where."</td><td>Scrolls through multiple collections one by one</td></tr>
+<tr><td>Collections grow too broad to be useful</td><td>"Beauty" becomes 400 unsorted posts</td></tr>
+<tr><td>Can only search by exact memory</td><td>No way to search by general intent or topic</td></tr>
+<tr><td>Saved content has little attached metadata</td><td>Retrieval relies on visual memory alone</td></tr>
+<tr><td>Can't find it fast enough</td><td>Re-saves the same content, or gives up</td></tr>
+</table>
+
+<p class="loglabel">THE FEATURE</p>
+<p>A native search bar inside the existing Saved tab. It searches across captions, hashtags, creator names, collection names, audio titles, and AI-generated topic labels — all at once, across every collection, not just the one you're currently in.</p>
+<div class="examples">
+<div>"halloween makeup"</div><div>"easy vegetarian dinners"</div><div>"neutral living room"</div><div>"workout for beginners"</div><div>"posts from @creatorname"</div>
+</div>
+
+<p class="loglabel">THE KEY DESIGN DECISION</p>
+<div class="decision"><p><b>No visible filters.</b> It would be easy to bolt on filter chips — Reels, Posts, Creators, Collections — sitting under the search bar. I deliberately left them out. The moment a feature asks someone to pick the right filter before they search, it's asking them to do the organizing work Saved already failed to do for them. Hashtags, captions, and topic labels still do real filtering — just invisibly, behind one plain search box. The user types what's in their head; Instagram does the matching. If results need narrowing later, that happens progressively, after a search, never before one.</p></div>
+
+<p class="loglabel">WHAT IT LOOKS LIKE</p>
+<div class="shots">
+<div class="phone"><div class="frame"><div class="scr">
+<div class="ig-top"><span>‹</span><span>Saved</span><span>✎</span></div>
+<div class="ig-search"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#a8a8a8" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>Search saved content</div>
+<div class="ig-sub">COLLECTIONS</div>
+<div class="ig-collections">
+<div class="ig-coll"><div class="sw" style="background:linear-gradient(135deg,#8B5E3C,#2b1912)"></div>Beauty looks</div>
+<div class="ig-coll"><div class="sw" style="background:linear-gradient(135deg,#C9A15A,#44301c)"></div>Recipes</div>
+<div class="ig-coll"><div class="sw" style="background:linear-gradient(135deg,#7A4A3A,#1c1c1c)"></div>Travel</div>
+</div>
+<div class="ig-sub">ALL POSTS</div>
+<div class="ig-grid"><div class="ig-tile a"></div><div class="ig-tile b"></div><div class="ig-tile c"></div><div class="ig-tile d"></div><div class="ig-tile b"></div><div class="ig-tile a"></div></div>
+</div></div><p class="cap">1 · Saved, today — same collections, one new search bar</p></div>
+
+<div class="phone"><div class="frame"><div class="scr">
+<div class="ig-top"><span>‹</span><span>Search</span><span></span></div>
+<div class="ig-search active"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>halloween makeup|</div>
+<div class="ig-sub">RECENT SEARCHES</div>
+<div class="ig-recent"><div>makeup looks</div><div>dinner recipes</div><div>neutral living room</div></div>
+</div></div><p class="cap">2 · Typing — no filter chips, nothing to pick</p></div>
+
+<div class="phone"><div class="frame"><div class="scr">
+<div class="ig-top"><span>‹</span><span>Search</span><span></span></div>
+<div class="ig-search active"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>halloween makeup</div>
+<div class="ig-results-head">24 results</div>
+<div class="ig-result"><div class="th" style="background:linear-gradient(135deg,#8B5E3C,#2b1912)"></div><div class="tx"><b>Halloween glam tutorial</b><span>Saved in Beauty looks · @glowbyjade</span></div></div>
+<div class="ig-result"><div class="th" style="background:linear-gradient(135deg,#C9A15A,#44301c)"></div><div class="tx"><b>Orange &amp; black eye look</b><span>Saved in Beauty inspo · @mua.ren</span></div></div>
+<div class="ig-result"><div class="th" style="background:linear-gradient(135deg,#7A4A3A,#1c1c1c)"></div><div class="tx"><b>Easy costume makeup</b><span>Saved in Ideas · @kcreates</span></div></div>
+</div></div><p class="cap">3 · Results — pulled from three different collections at once</p></div>
+</div>
+
+<p class="loglabel">RECOMMENDED USER FLOW</p>
+<div class="flow"><span>Open Saved</span><i>→</i><span>Tap search</span><i>→</i><span>Type keyword</span><i>→</i><span>Results from all collections</span><i>→</i><span>Open post</span></div>
+<p>Filters, if ever needed, appear only after a search returns results too broad to scan — never before. The default path has one input and zero decisions.</p>
+
+<p class="loglabel">WHY THIS MVP, SPECIFICALLY</p>
+<p>Of three layouts I considered — a simple search bar, search plus suggested topic chips, and a full search-first Saved homepage — the plain search bar is the right first ship. It changes nothing about how collections already work, it's easy to test and measure in isolation, and it proves the hardest part — whether hashtag- and caption-based matching is actually good enough — before Instagram invests in a bigger redesign. The topic-suggestion and search-first ideas are real, just sequenced for later, once search quality is proven.</p>
+
+<p class="loglabel">SUCCESS METRICS</p>
+<p>The one that matters most: <b>the percentage of Saved searches that end in the user opening a result.</b> Supporting signals: search adoption rate within Saved, time-to-find a specific post, searches that return zero results, and whether duplicate saves of the same post go down over time.</p>
+
+<p class="loglabel">RISKS</p>
+<div class="risk"><h4>Search accuracy</h4><p>Captions alone won't cover most posts. Matching needs to lean on hashtags, creator metadata, audio titles, and image-understanding — caption text by itself will under-deliver on exactly the queries this feature is meant to answer.</p></div>
+<div class="risk"><h4>Privacy</h4><p>Auto-labeling saved content means Instagram is analyzing it. That needs a clear, visible explanation of how labels are generated and a real way to opt out of the personalization, not just a buried settings toggle.</p></div>
+<div class="risk"><h4>Empty results</h4><p>A zero-result search is where this feature loses trust fastest. It should never dead-end — fall back to similar keywords, related collections, or offer to search all of Instagram instead of just Saved.</p></div>
+<div class="risk"><h4>Scope creep</h4><p>The invisible-filtering principle is easy to erode one "just one more chip" at a time. Holding the line on zero visible filters at launch is itself a risk to actively manage, not a one-time decision.</p></div>
+
+<footer>Product concept, built to show the thinking end to end — problem, users, flow, and why the simplest version is the right one to ship first.</footer>
+</div></body></html>
